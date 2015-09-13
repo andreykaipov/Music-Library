@@ -1,3 +1,5 @@
+package music;
+
 /**
  * @author Andrey Kaipov
  * @version 1.0 October 21, 2014
@@ -5,7 +7,7 @@
  * However, we can easily add the length of the track as a parameter, etc.
  * Then we would need a TrackComparator for comparing lengths!
  */
-package music;
+
 
 /**
  * A class representing a track (song) object.

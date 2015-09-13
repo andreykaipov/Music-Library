@@ -1,12 +1,14 @@
+package music;
+
 /**
  * @author Andrey Kaipov
- * @version 2.5 October 21 2014 -> 9/13/2015
+ * @version 2.0 October 10, 2014
  * This is a music library. 
  * After we read the original input file, a menu is presented to the user.
  * This menu is user-friendly as it is self-navigating, and includes detailed
  * instructions from within. 
  */
-package music;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,16 +19,17 @@ import java.util.Collections;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class MusicLibrary
+public class MusicLibrary extends javax.swing.JPanel
 {
    private String fileName;
    private ArrayList<Album> catalog = new ArrayList<>();
-    
-   public static void main(String[] args)
-   {
+   
+   public static void main(String[] args) 
+   {        
       MusicLibrary myMusic = new MusicLibrary();
       myMusic.readFile();
       myMusic.promptMenu();
+      
    }
    
    /**

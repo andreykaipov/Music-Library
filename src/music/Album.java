@@ -1,10 +1,12 @@
+package music;
+
 /**
  * @author Andrey Kaipov
  * @version 1.0 October 21, 2014
  * This class represents an album object. It is the basis for a music library
  * because we can't listen to music without albums to listen from!
  */
-package music;
+
 
 import java.util.ArrayList;
 
@@ -74,7 +76,8 @@ public class Album implements Comparable
             if ( (t.getName()).length() > 31)           //some track names are
                 title = title.substring(0, 30) + "..."; //awfully long, so we
                                                         //shorten it if it so.
-            names += String.format("%-35s", title);
+            names = names + String.format("%2s", title + "\n\t\t\t\t\t\t\t\t       ");
+            //lol, don't look at this.
         }
         
         //for nice-looking output. toUpperCase to standardize output.

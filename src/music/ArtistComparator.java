@@ -1,10 +1,12 @@
+package music;
+
 /**
  * @author Andrey Kaipov
  * @version 1.0 October 21, 2014
  * This class exists so we can compare our Album objects not just in terms of
  * album names, but also in terms of artist names.
  */
-package music;
+
 
 import java.util.Comparator;
 
